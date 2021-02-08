@@ -53,24 +53,24 @@ def parse_arguments():
     parser = argparse.ArgumentParser(
         description='Stepik downloader')
 
-    parser.add_argument('-c', '--client_id',
+    parser.add_argument('-c', 'gXURNpZWj7xBtmNycOfkng0YViTlN4FbKqfFwr1D',
                         help='your client_id from https://stepik.org/oauth2/applications/',
                         required=True)
 
-    parser.add_argument('-s', '--client_secret',
+    parser.add_argument('-s', 'esalPvuktu87U4vlOLDfrHB5674NMlmDWN29LfA1MCw45SNuPOc9TO0yKRUpqNWRDvUYwjDhb5A8Z0qIGVllfBjH8KVgNOX4sTJ721XzybzH1bX8kyqB6xFpE2fISchG',
                         help='your client_secret from https://stepik.org/oauth2/applications/',
                         required=True)
 
-    parser.add_argument('-i', '--course_id',
+    parser.add_argument('-i', '91093',
                         help='course id',
                         required=True)
 
-    parser.add_argument('-w', '--week_id',
+    parser.add_argument('-w', '4',
                         help='week id starts from 1 (if not set then it will download the whole course)',
                         type=int,
                         default=None)
 
-    parser.add_argument('-q', '--quality',
+    parser.add_argument('-q', '1080',
                         help='quality of a video. Default is 720',
                         choices=['360', '720', '1080'],
                         default='720')
